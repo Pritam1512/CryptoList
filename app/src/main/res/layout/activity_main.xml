@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#CCCCFF"
+            app:queryHint="Search here....."
+            app:iconifiedByDefault="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cryptoList"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_active_coin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/active_coins"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4974a5"/>
+        <Button
+            android:id="@+id/button_inactive_coin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/inactive_coins"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4974a5"/>
+        <Button
+            android:id="@+id/button_only_token"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/only_tokens"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4974a5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_only_coin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/only_coins"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4974a5"/>
+        <Button
+            android:id="@+id/button_new_coin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_coins"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4974a5"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
